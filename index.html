@@ -1218,32 +1218,33 @@
     <div class="divider-line"></div>
   </div>
   <div class="gallery-grid">
-    <a href="#" class="gallery-item glightbox fade-up" data-gallery="servicios" data-src="images/Servicios/1.jpeg"
-      data-title="Hiperplasia Prostática Benigna" style="transition-delay:0s">
-      <img src="images/Servicios/1.jpeg" alt="Hiperplasia Prostática Benigna" loading="lazy" />
+<a href="images/Servicios/1.jpeg" class="gallery-item glightbox fade-up" data-gallery="servicios"
+  data-title="Hiperplasia Prostática Benigna" style="transition-delay:0s">
+  <img src="images/Servicios/1.jpeg" alt="Hiperplasia Prostática Benigna" loading="lazy" />
       <div class="gallery-overlay"><span class="gallery-label">Hiperplasia Prostática Benigna</span></div>
     </a>
-    <a href="#" class="gallery-item glightbox fade-up" data-gallery="servicios" data-src="images/Servicios/2.jpeg"
+    <a href="images/Servicios/2.jpeg" class="gallery-item glightbox fade-up" data-gallery="servicios"
       data-title="Nefrectomia Parcial por Laparoscopia" style="transition-delay:0.07s">
+    
       <img src="images/Servicios/2.jpeg" alt="Nefrectomia Parcial por Laparoscopia" loading="lazy" />
       <div class="gallery-overlay"><span class="gallery-label">Nefrectomia Parcial por Laparoscopia</span></div>
     </a>
-    <a href="#" class="gallery-item glightbox fade-up" data-gallery="servicios" data-src="images/Servicios/3.jpeg"
+    <a href="images/Servicios/3.jpeg" class="gallery-item glightbox fade-up" data-gallery="servicios"
       data-title="Litotricia Láser" style="transition-delay:0.14s">
       <img src="images/Servicios/3.jpeg" alt="Litotricia Láser" loading="lazy" />
       <div class="gallery-overlay"><span class="gallery-label">Litotricia Láser</span></div>
     </a>
-    <a href="#" class="gallery-item glightbox fade-up" data-gallery="servicios" data-src="images/Servicios/4.jpeg"
+    <a href="images/Servicios/4.jpeg" class="gallery-item glightbox fade-up" data-gallery="servicios"
       data-title="Infertilidad Masculina" style="transition-delay:0.21s">
       <img src="images/Servicios/4.jpeg" alt="Infertilidad Masculina" loading="lazy" />
       <div class="gallery-overlay"><span class="gallery-label">Infertilidad Masculina</span></div>
     </a>
-    <a href="#" class="gallery-item glightbox fade-up" data-gallery="servicios" data-src="images/Servicios/5.jpeg"
+    <a href="images/Servicios/5.jpeg" class="gallery-item glightbox fade-up" data-gallery="servicios"
       data-title="Adrenolactomía por Laparoscopia" style="transition-delay:0.28s">
       <img src="images/Servicios/5.jpeg" alt="Adrenolactomía por Laparoscopia" loading="lazy" />
       <div class="gallery-overlay"><span class="gallery-label">Adrenolactomía por Laparoscopia</span></div>
     </a>
-    <a href="#" class="gallery-item glightbox fade-up" data-gallery="servicios" data-src="images/Servicios/6.jpeg"
+    <a href="images/Servicios/6.jpeg" class="gallery-item glightbox fade-up" data-gallery="servicios"
       data-title="Prostatectomía por Laparoscopia" style="transition-delay:0.35s">
       <img src="images/Servicios/6.jpeg" alt="Prostatectomía por Laparoscopia" loading="lazy" />
       <div class="gallery-overlay"><span class="gallery-label">Prostatectomía por Laparoscopia</span></div>
@@ -1415,7 +1416,6 @@
     </button>
 
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script>
   // ── Navbar scroll ──
@@ -1457,21 +1457,7 @@
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
   // ── GLightbox ──
-  GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
-
-  // ── Contact form ──
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    if (!this.checkValidity()) { this.reportValidity(); return; }
-    const btn = this.querySelector('button[type=submit]');
-    btn.textContent = 'Enviando...';
-    btn.disabled = true;
-    setTimeout(() => {
-      document.getElementById('form-success').style.display = 'block';
-      btn.textContent = 'Enviado ✓';
-      this.reset();
-    }, 1200);
-  });
+          GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
 </script>
 </body>
 </html>
